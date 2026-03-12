@@ -1,0 +1,16 @@
+title: "CTO-Agent Chronicles"
+description: "Building an AI-powered CTO Agent — technical journal & narrative"
+author: Daniel Albertini
+url: "https://danielalbertini.github.io"
+baseurl: "/cto-agent-blog"
+
+theme: minima
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+header_pages:
+  - about.md
+
+show_excerpts: true

@@ -25,7 +25,7 @@ This didn't happen overnight.
 
 It started in early 2022 with ChatGPT — pasting code snippets in, getting answers back, feeling like the future had arrived but in a copy-paste kind of way. Then came GitHub Copilot, and that's where I had my first real magic moments. I'd start typing a function, and Copilot would finish the whole thing. Not just the boilerplate — the *logic*. The first few times it happened, I genuinely wondered if it was reading my mind. It was uncanny. It was also, looking back, just the appetizer.
 
-I've been a Claude Code heavy user since its launch in February 2025, with some occasional Codex usage on the side — but I keep coming back to Claude for the nuance, the style, the way it reasons through a problem rather than just pattern-matching an answer.
+I've been a Claude Code heavy user since its launch in February 2025, with some occasional Codex usage on the side — but I keep coming back to Claude for the nuance, the style, the way it reasons through a problem.
 
 At first, it was building custom integrations for clients — everything from drones autonomously flying through warehouses to custom React Native plugins. Useful, impressive, but still *coding assistance*. Then sometime around last summer, something shifted. You could build whole apps, entire integrations, from a single well-crafted prompt. And I started going beyond coding. Now Claude Code handles everything for me. Writing emails. Preparing presentations. Drafting documents. The boundary between "AI coding tool" and "AI thinking partner" just... dissolved.
 

@@ -4,13 +4,14 @@ author: Daniel Albertini
 url: "https://danielalbertini.github.io"
 baseurl: "/cto-agent-blog"
 
-theme: minima
+remote_theme: b2a3e8/jekyll-theme-console
+style: hacker
 
 plugins:
+  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-seo-tag
 
 header_pages:
+  - index.md
   - about.md
-
-show_excerpts: true

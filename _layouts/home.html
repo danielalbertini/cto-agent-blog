@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<div class="hero">
+  <div class="hero-photo">
+    <img src="{{ '/assets/profile.svg' | relative_url }}" alt="Daniel Albertini" />
+  </div>
+  <div class="hero-text">
+    <h1 class="hero-title">{{ site.title }}</h1>
+    <p class="hero-mantra">Family first. Assume everyone good. Embrace constraints. Ship with joy.</p>
+    <div class="hero-links">
+      <a href="https://linkedin.com/in/danielalbertini">linkedin</a>
+      <span class="hero-sep">·</span>
+      <a href="https://instagram.com/fleaflicker85">instagram</a>
+      <span class="hero-sep">·</span>
+      <a href="mailto:daniel.albertini@anyline.com">email</a>
+    </div>
+  </div>
+</div>
+
+{{ content }}
+
+{% if site.posts.size > 0 %}
+<div class="post-list">
+  {% for post in site.posts %}
+  <div class="post-entry">
+    [ {{ post.date | date: "%Y-%m-%d" }} ] <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}

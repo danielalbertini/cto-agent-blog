@@ -1,3 +1,74 @@
+/* ── Hero section (homepage) ── */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--base-color);
+}
+.hero-photo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid var(--base-color);
+  object-fit: cover;
+}
+.hero-title {
+  font-size: 1.6rem !important;
+  margin: 0 !important;
+  margin-bottom: 0.4rem !important;
+}
+.hero-mantra {
+  font-size: 12px;
+  opacity: 0.65;
+  margin-bottom: 0.6rem !important;
+  font-style: italic;
+}
+.hero-links {
+  font-size: 12px;
+}
+.hero-links a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+.hero-links a:hover {
+  color: var(--background-color);
+  background-color: var(--base-color);
+}
+.hero-sep {
+  margin: 0 0.4rem;
+  opacity: 0.4;
+}
+
+/* ── Post list (homepage) ── */
+.post-entry {
+  margin-bottom: 0.4rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* ── Footer ── */
+.footer-content {
+  font-size: 11px;
+  opacity: 0.5;
+}
+.footer-content a {
+  color: var(--text-color);
+}
+.footer-content a:hover {
+  color: var(--link-color);
+  background: none;
+}
+.footer-sep {
+  margin: 0 0.3rem;
+}
+
 /* ── Post title ── */
 .post-title {
   font-size: 1.8rem;

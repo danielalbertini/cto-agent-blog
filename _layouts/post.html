@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<div class="post-page">
+  <h1 class="post-title">{{ page.title }}</h1>
+  <div class="post-meta">{{ page.date | date: "%Y-%m-%d" }} · {{ page.author | default: site.author }}</div>
+
+  <div class="post-wrapper">
+    <div class="post-body">
+      <div class="post-content">
+        {{ content }}
+      </div>
+    </div>
+
+    {% assign headings = content | split: '<h2' %}
+    {% if headings.size > 1 %}
+    <aside class="toc-sidebar">
+      <nav>
+        <div class="toc-title">Contents</div>
+        <ul>
+          {% for heading in headings %}
+            {% if forloop.first %}{% continue %}{% endif %}
+            {% assign heading_text = heading | split: '</h2>' | first %}
+            {% assign heading_text = heading_text | split: '>' | last %}
+            {% assign heading_id = heading | split: 'id="' %}
+            {% if heading_id.size > 1 %}
+              {% assign heading_id = heading_id[1] | split: '"' | first %}
+            {% else %}
+              {% assign heading_id = heading_text | slugify %}
+            {% endif %}
+            <li><a href="#{{ heading_id }}">{{ heading_text }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </aside>
+    {% endif %}
+  </div>
+</div>

@@ -1,0 +1,132 @@
+/* ── Post title ── */
+.post-title {
+  font-size: 1.8rem;
+  line-height: 1.3;
+  margin-bottom: 0.3rem;
+}
+.post-meta {
+  font-size: 0.85rem;
+  opacity: 0.6;
+  margin-bottom: 2rem;
+}
+
+/* ── Headings — readable hierarchy ── */
+.post-content h2 {
+  font-size: 1.4rem;
+  margin-top: 2.5rem;
+  margin-bottom: 0.8rem;
+  border-bottom: 1px solid var(--base-color);
+  padding-bottom: 0.3rem;
+}
+.post-content h3 {
+  font-size: 1.15rem;
+  margin-top: 2rem;
+  margin-bottom: 0.6rem;
+}
+.post-content h4 {
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ── Body text — slightly larger for readability ── */
+.post-content p,
+.post-content ul,
+.post-content ol,
+.post-content li {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* ── Two-column layout: content + TOC ── */
+.post-wrapper {
+  display: flex;
+  gap: 3rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.post-body {
+  flex: 1;
+  min-width: 0;
+}
+
+/* ── Sidebar TOC ── */
+.toc-sidebar {
+  width: 220px;
+  flex-shrink: 0;
+  font-size: 12px;
+}
+.toc-sidebar nav {
+  position: sticky;
+  top: 2rem;
+}
+.toc-sidebar .toc-title {
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+  opacity: 0.6;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.toc-sidebar ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.toc-sidebar ul li {
+  margin-bottom: 0.5rem;
+}
+.toc-sidebar ul li:before {
+  content: ">" !important;
+  margin-right: 6px;
+  opacity: 0.4;
+}
+.toc-sidebar ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  opacity: 0.7;
+  transition: opacity 0.15s;
+}
+.toc-sidebar ul li a:hover {
+  opacity: 1;
+  color: var(--link-color);
+  background: none;
+}
+
+/* ── Override container width for post pages ── */
+.post-page .container {
+  max-width: 960px;
+}
+
+/* ── Hide TOC on mobile, stack vertically ── */
+@media only screen and (max-width: 768px) {
+  .post-wrapper {
+    flex-direction: column;
+  }
+  .toc-sidebar {
+    width: 100%;
+    order: -1;
+    margin-bottom: 2rem;
+  }
+  .toc-sidebar nav {
+    position: static;
+  }
+  .post-page .container {
+    max-width: 600px;
+  }
+}
+
+/* ── Blockquote styling ── */
+.post-content blockquote {
+  border-left: 2px solid var(--base-color);
+  padding-left: 1rem;
+  opacity: 0.8;
+  margin: 1.5rem 0;
+}
+
+/* ── HR styling ── */
+.post-content hr {
+  border: none;
+  border-top: 1px solid var(--base-color);
+  margin: 2rem 0;
+  opacity: 0.3;
+}

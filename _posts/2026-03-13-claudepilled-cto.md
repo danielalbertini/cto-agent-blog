@@ -31,9 +31,9 @@ At first, it was building custom integrations for clients — everything from dr
 
 ## The Cyborg CTO
 
-Over the last couple of weeks, I've taken all of that — a year of living in Claude Code — and started compiling it into something more structured: the CTO-Agent. It's a Skills Registry that gives Claude the ability to reach into all the tools I used to hop between. GitLab, Jira, Confluence, Salesforce, 1Password, Slack, Telegram, Outlook, GitHub. Each skill is a modular CLI wrapper, and Claude orchestrates them all from one place: my terminal.
+Over the last couple of weeks, I've taken all of that — a year of living in Claude Code — and started compiling it into something more structured: the CTO-Agent. It's a Skills Registry that gives Claude the ability to reach into all the tools I used to hop between. GitLab, Jira, Confluence, Salesforce, 1Password, Slack, Outlook, GitHub. Each skill is a modular CLI wrapper, and Claude orchestrates them all from one place: my terminal.
 
-I'm not automating myself out of a job. I'm *augmenting* myself into a better version of one. I'm basically a cyborg now — my human half provides the direction, the judgment calls, the "what should we do and why." My Claude half handles the mechanical work: fetching data, formatting reports, building tools, writing the code I describe. The non-human parts of me are faster, more precise, and never forget an API parameter.
+I'm not automating myself out of a job. I'm *augmenting* myself into a better version of one. I'm basically a cyborg now — my human half provides the direction, the judgment calls, the "what should we do and why." That line is blurring more every day, but I'll save that for a future post. My Claude half handles the mechanical work: fetching data, formatting reports, building tools, writing the code I describe. The non-human parts of me are faster, more precise, and never forget an API parameter.
 
 This isn't a metaphor. Right now, as you read this, you're reading a post where I provided the raw inspiration — the ideas, the feelings, the stories — and my cyborg other half turned it into something (hopefully) exciting and fun to read. That's the workflow. That's the point.
 

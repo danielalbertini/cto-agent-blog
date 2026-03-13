@@ -1,8 +1,8 @@
 title: "Becoming a Cyborg"
 description: "Chronicles of a CTO merging with his AI"
 author: Daniel Albertini
-url: "https://danielalbertini.github.io"
-baseurl: "/cto-agent-blog"
+url: "https://cyborgd.com"
+baseurl: ""
 
 remote_theme: b2a3e8/jekyll-theme-console
 style: hacker

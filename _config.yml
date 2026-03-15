@@ -13,6 +13,7 @@ plugins:
   - jekyll-seo-tag
 
 tracking: true
+csp_extra: "script-src gc.zgo.at; connect-src danielalbertini.goatcounter.com;"
 
 header_pages:
   - index.md
